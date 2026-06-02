@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 import javax.swing.JOptionPane;
 /**
  *
- * @author clebe
+ * @author vitor
  */
 public class ModuloConexao {
     //criando um método ressponável por estabelecer uma conexão com o banco
@@ -19,7 +19,7 @@ public class ModuloConexao {
         //armazenando informações referente ao banco de dados
         String url = "jdbc:mysql://localhost:3306/gestaopedidos?characterEncoding=utf-8"; //useTimezone=true&serverTimezone=UTC
         String user = "root";
-        String senha = "29052005";
+        String senha = "password";
         //estabelecer a conexão com o banco
         try {
             Class.forName(driver);

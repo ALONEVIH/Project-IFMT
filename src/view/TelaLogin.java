@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author clebe
+ * @author vitor
  */
 
 public class TelaLogin extends javax.swing.JFrame {
@@ -128,6 +128,7 @@ public class TelaLogin extends javax.swing.JFrame {
         UsuarioDAO dao = new UsuarioDAO();
         if(dao.logar(usuario, senha)){
             dispose();
+            
         }
         
     }//GEN-LAST:event_jBtnLogarActionPerformed

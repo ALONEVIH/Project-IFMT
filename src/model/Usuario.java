@@ -8,7 +8,7 @@ import java.util.Date;
 
 /**
  *
- * @author clebe
+ * @author vitor
  */
 public class Usuario {
     

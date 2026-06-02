@@ -22,7 +22,7 @@ import view.TelaPrincipal;
 
 /**
  *
- * @author clebe
+ * @author vitor
  */
 public class UsuarioDAO {
     
@@ -75,7 +75,7 @@ public class UsuarioDAO {
             }
             return true;
         } catch (Exception e) {
-            
+            JOptionPane.showMessageDialog(null, "Erro: " + e.getMessage());
             return false;
         }
     } 

@@ -15,7 +15,7 @@ import java.sql.SQLException;
 
 /**
  *
- * @author 
+ * @author vitor
  */
 public class TelaPedido extends javax.swing.JFrame {
     

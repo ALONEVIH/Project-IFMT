@@ -12,7 +12,7 @@ import model.Usuario;
 
 /**
  *
- * @author clebe
+ * @author vitor
  */
 public class TelaUsuario extends javax.swing.JFrame {
 
