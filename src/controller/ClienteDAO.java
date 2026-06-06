@@ -183,8 +183,6 @@ public class ClienteDAO {
                 obj.setCep(rs.getString("cep"));
                 obj.setDataCadastro(rs.getDate("data_cadastro"));
                 obj.setObservacoes(rs.getString("observacoes"));
-                
-
                 lista.add(obj);
             }
 
@@ -230,7 +228,46 @@ public class ClienteDAO {
             return null;
         }
     } 
-     
+    
+    public List<Cliente> listarClienteConsultaNome(String nome) {
+        try {
+
+            //1 passo criar a lista
+            List<Cliente> lista = new ArrayList<>();
+
+            //2 passo - criar o sql , organizar e executar.
+            String sql ="select id_cliente as id, nome, documento, tipo_cliente, telefone, email, logradouro, numero, complemento, bairro, cidade, estado from clientes where nome like ?";
+            PreparedStatement stmt;
+            stmt = con.prepareStatement(sql);
+            stmt.setString(1, nome);
+            ResultSet rs = stmt.executeQuery();
+
+            while (rs.next()) {
+                Cliente obj = new Cliente();
+                obj.setId(rs.getInt("id"));
+                obj.setNome(rs.getString("nome"));
+                obj.setDocumento(rs.getString("documento"));
+                obj.setTipo_Cliente(rs.getString("tipo_cliente"));
+                obj.setTelefone(rs.getString("telefone"));
+                obj.setEmail(rs.getString("email"));
+                obj.setLogradouro(rs.getString("logradouro"));
+                obj.setNumero(rs.getString("numero"));
+                obj.setComplemento(rs.getString("complemento"));
+                obj.setBairro(rs.getString("bairro"));
+                obj.setCidade(rs.getString("cidade"));
+                obj.setEstado(rs.getString("estado"));
+                lista.add(obj);
+                
+            }
+
+            return lista;
+
+        } catch (SQLException erro) {
+
+            JOptionPane.showMessageDialog(null, "Erro :" + erro);
+            return null;
+        }
+    } 
      
 	
     public Cliente buscaCep(String cep) {

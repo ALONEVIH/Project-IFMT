@@ -2,6 +2,25 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/home/vh/TADS/GestãoPedidos/Project-IFMT/src/controller/UsuarioDAO.java</file>
+            <file>file:/home/vh/TADS/GestãoPedidos/Project-IFMT/src/jdbc/ModuloConexao.java</file>
+            <file>file:/home/vh/TADS/GestãoPedidos/Project-IFMT/src/jdbc/TesteConexao.java</file>
+            <file>file:/home/vh/TADS/GestãoPedidos/Project-IFMT/src/controller/ClienteDAO.java</file>
+            <file>file:/home/vh/TADS/GestãoPedidos/Project-IFMT/src/controller/PreparedStatement.java</file>
+            <file>file:/home/vh/TADS/GestãoPedidos/Project-IFMT/src/controller/PedidoDAO.java</file>
+            <file>file:/home/vh/TADS/GestãoPedidos/Project-IFMT/src/model/Cliente.java</file>
+            <file>file:/home/vh/TADS/GestãoPedidos/Project-IFMT/src/model/Usuario.java</file>
+            <file>file:/home/vh/TADS/GestãoPedidos/Project-IFMT/src/model/Pedido.java</file>
+            <file>file:/home/vh/TADS/GestãoPedidos/Project-IFMT/src/model/WebServiceCep.java</file>
+            <file>file:/home/vh/TADS/GestãoPedidos/Project-IFMT/src/view/TelaCliente.java</file>
+            <file>file:/home/vh/TADS/GestãoPedidos/Project-IFMT/src/view/TelaLogin.java</file>
+            <file>file:/home/vh/TADS/GestãoPedidos/Project-IFMT/src/view/TelaPedido.java</file>
+            <file>file:/home/vh/TADS/GestãoPedidos/Project-IFMT/src/view/TelaPrincipal.java</file>
+            <file>file:/home/vh/TADS/GestãoPedidos/Project-IFMT/src/view/TelaUsuario.java</file>
+            <file>file:/home/vh/TADS/GestãoPedidos/Project-IFMT/src/icons/delete.png</file>
+            <file>file:/home/vh/TADS/GestãoPedidos/Project-IFMT/src/icons/print.png</file>
+            <file>file:/home/vh/TADS/GestãoPedidos/Project-IFMT/src/icons/read.png</file>
+        </group>
     </open-files>
 </project-private>

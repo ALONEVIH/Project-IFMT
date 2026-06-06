@@ -43,6 +43,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMnItmCliente = new javax.swing.JMenuItem();
         jMnItmUsuario = new javax.swing.JMenuItem();
         jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
         jMnRelatorio = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
 
@@ -61,6 +62,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jTxtHora.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
 
         jMnCadastro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/cliente (2).png"))); // NOI18N
+        jMnCadastro.setMnemonic('c');
         jMnCadastro.setText("Cadastro");
         jMnCadastro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -94,13 +96,23 @@ public class TelaPrincipal extends javax.swing.JFrame {
         });
         jMnCadastro.add(jMenuItem1);
 
+        jMenuItem2.setText("Consultar Clientes");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        jMnCadastro.add(jMenuItem2);
+
         jMenuBar1.add(jMnCadastro);
 
         jMnRelatorio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/relatorio.png"))); // NOI18N
+        jMnRelatorio.setMnemonic('r');
         jMnRelatorio.setText("Relatório");
         jMenuBar1.add(jMnRelatorio);
 
         jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/fechar.png"))); // NOI18N
+        jMenu3.setMnemonic('s');
         jMenu3.setText("Sair");
         jMenu3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -185,6 +197,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         tela.setVisible(true);  
         
     }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        TelaConsulta tela = new TelaConsulta();
+        tela.setVisible(true);
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
     
     
     /**
@@ -222,6 +239,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenu jMnCadastro;
     private javax.swing.JMenuItem jMnItmCliente;
     public javax.swing.JMenuItem jMnItmUsuario;
